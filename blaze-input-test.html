@@ -1,0 +1,13 @@
+<head>
+  <title>blaze-input-test</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="text" value="{{greeting}}" />
+</template>
