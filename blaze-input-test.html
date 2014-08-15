@@ -8,6 +8,7 @@
 
 <template name="hello">
   <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="text" value="{{greeting}}" />
+  <p>{{#with greetingScope}}{{greeting}}{{/with}}</p>
+  <p>{{#with greetingScope}}<input id="{{inputId}}" type="text" value="{{greeting}}" />{{#if concurrent}}WARNING{{/if}}{{/with}}</p>
+  <p>{{#with greetingScope}}<input id="{{inputId}}" type="text" value="{{greeting}}" />{{#if concurrent}}WARNING{{/if}}{{/with}}</p>
 </template>
